@@ -1,6 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Login from "./pages/Login"
+
 function App() {
   return (
-    <div className='bg-red-300'>Hola mundo</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

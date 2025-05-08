@@ -25,7 +25,7 @@ export default function Login() {
         <input 
           placeholder="Email"
           value={email}
-          type="email" 
+          type="text" 
           onChange={(e) => setEmail(e.target.value)}
         />
         <input 
@@ -35,7 +35,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         {error && <p>{error}</p>}
-        <button type="submit">Error</button>
+        <button type="submit">Entrar</button>
       </form>
     </>
   )

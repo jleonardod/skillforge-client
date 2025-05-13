@@ -14,7 +14,7 @@ export const login = async (email, password) => {
       maxBodyLength: Infinity,
     });
 
-    console.log("Login successful:", response.data);
+    //console.log("Login successful:", response.data);
     return response.data; // Devuelve los datos de la respuesta
   } catch (error) {
     console.error("Login error:", error.response?.data || error.message);

@@ -15,7 +15,6 @@ export default function Login() {
     try{
       const data = await loginService(email, password)
       login(data.token)
-      console.log("Login successful:", data)
       navigate("/courses")
     } catch (error) {
       setError(error.message)
